@@ -60,7 +60,7 @@
         margin: 0px auto;
         border-radius:$medida-ep;
         object-fit: cover;
-        @include wid-hei(300px ,250px);
+        @include wid-hei($max ,$max);
 
         &:hover{
             box-shadow:$min $min $medida-sm;
@@ -74,21 +74,11 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding:25px;
-        img{
-            width:$font-size-lg * 10;
-            max-width:$max;
-        }
     }
 
     @media (min-width:$desktop) {
         grid-template-columns: repeat(3,1fr);
-        gap: 30px;
-    }
-
-    @media (min-width:$desktopXG) {
-        img{
-            height: 350px;
-        }
+        gap: 20px;
     }
 }
 .galeria__videos{
