@@ -2,13 +2,12 @@
     @include flex-column;
 
     h1{
-    @include dispay-justify-center;
-    font-size:$font-size-md;
-    padding-top:$medida-xl;
-    background:$color-encabezado;
-    text-align: center;
+        @include dispay-justify-center;
+        font-size:$font-size-md;
+        padding-top:$medida-xl;
+        background:$color-encabezado;
+        text-align: center;
     }
-
     h2{
         background:$color-encabezado;
         margin:$medida-md $min;
@@ -16,23 +15,10 @@
         padding:$medida-ep;
         text-align: center;
     }
-    p{
-        font-family: monospace;
-        padding: auto;
-        background:$color-encabezado;
-        font-size:$font-size-sm;
-        color:$color-enlaces;
-        @include mar-pad(15px ,15px);
-        text-align: center;
-    }
-    
     @media (min-width:$tablet){
         font-size:$font-size-lg;
         h2{
             font-size: 2rem;
-        }
-        p{
-            @include mar-pad($medida-epl ,$medida-epl);
         }
     }
     
@@ -42,10 +28,6 @@
         }
         h2{
             font-size:$font-size-md;
-        }
-        p{
-            @include mar-pad($medida-sm ,$medida-epl);
-            font-size:2rem;
         }
     }
     

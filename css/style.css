@@ -405,26 +405,12 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   padding: 10px;
   text-align: center;
 }
-.title__galeria p, .title__informacion p, .title__palmares p {
-  font-family: monospace;
-  padding: auto;
-  background: rgb(44, 44, 44);
-  font-size: 1rem;
-  color: rgb(239, 239, 177);
-  margin: 15px;
-  padding: 15px;
-  text-align: center;
-}
 @media (min-width: 576px) {
   .title__galeria, .title__informacion, .title__palmares {
     font-size: 5rem;
   }
   .title__galeria h2, .title__informacion h2, .title__palmares h2 {
     font-size: 2rem;
-  }
-  .title__galeria p, .title__informacion p, .title__palmares p {
-    margin: 20px;
-    padding: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -433,11 +419,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
   .title__galeria h2, .title__informacion h2, .title__palmares h2 {
     font-size: 3rem;
-  }
-  .title__galeria p, .title__informacion p, .title__palmares p {
-    margin: 30px;
-    padding: 20px;
-    font-size: 2rem;
   }
 }
 
@@ -613,9 +594,44 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 
-.title__informacion p:nth-child(even) {
+.title__informacion p, .title__palmares p {
+  font-family: monospace;
+  padding: auto;
+  background: rgb(44, 44, 44);
+  font-size: 1rem;
+  color: rgb(239, 239, 177);
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+}
+.title__informacion p:nth-child(even), .title__palmares p:nth-child(even) {
   background-color: rgb(122, 118, 118);
   color: rgb(0, 0, 0);
+}
+@media (min-width: 576px) {
+  .title__informacion, .title__palmares {
+    font-size: 5rem;
+  }
+  .title__informacion h2, .title__palmares h2 {
+    font-size: 2rem;
+  }
+  .title__informacion p, .title__palmares p {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .title__informacion h1, .title__palmares h1 {
+    font-size: 8rem;
+  }
+  .title__informacion h2, .title__palmares h2 {
+    font-size: 3rem;
+  }
+  .title__informacion p, .title__palmares p {
+    margin: 30px;
+    padding: 20px;
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

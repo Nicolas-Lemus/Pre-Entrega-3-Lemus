@@ -1,8 +1,42 @@
 .title__informacion{
     @extend .title__galeria;
 
+    p{
+        font-family: monospace;
+        padding: auto;
+        background: rgb(44, 44, 44);
+        font-size: 1rem;
+        color: rgb(239, 239, 177);
+        margin: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
     p:nth-child(even){
         background-color:$color-grey;
         color:$color-terciario;
+    }
+
+    @media (min-width:$tablet){
+        font-size:$font-size-lg;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            @include mar-pad($medida-epl ,$medida-epl);
+        }
+    }
+
+    @media (min-width:$desktop){
+        h1{
+            font-size:$font-size-xl;
+        }
+        h2{
+            font-size:$font-size-md;
+        }
+        p{
+            @include mar-pad($medida-sm ,$medida-epl);
+            font-size:2rem;
+        }
     }
 }
