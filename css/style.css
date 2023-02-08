@@ -355,7 +355,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 
 .lanzamientos {
-  padding-top: 120px;
+  padding-top: 130px;
 }
 @media (min-width: 576px) {
   .lanzamientos h5 {
@@ -568,6 +568,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   display: block;
   margin: auto;
   width: 100%;
+  border-radius: 15px;
 }
 .contactanos h1 {
   padding-top: 180px;

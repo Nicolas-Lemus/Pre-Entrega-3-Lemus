@@ -154,7 +154,7 @@
             width: $max;
         }
         p ,a{
-            font-size: 1.5rem;
+            font-size:$font-size-ep + $font-size-sm;
         }
     }
 }
@@ -177,7 +177,7 @@
 
 .lanzamientos{
     @extend .noticias;
-        padding-top: 120px;
+        padding-top:$medida-xl;
 
     .card-productos{
         @extend .card-group;
@@ -193,11 +193,11 @@
                 font-size: 1.8rem;
             }
             p{
-                font-size: 1rem;
+                font-size:$font-size-sm;
             }
         }
         img{
-            border-radius: 10px;
+            border-radius:$medida-ep;
             object-fit: contain;
         }
 
