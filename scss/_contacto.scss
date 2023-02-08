@@ -16,6 +16,7 @@
         background:$color-white;
         color:$color-terciario;
         width:$max - 30%;
+        border-radius: 8px;
     }
     .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
         font-size:1.2rem;
@@ -32,7 +33,6 @@
         &:hover{
             cursor: pointer;
             color:$color-white;
-            transition: .7s;
             font-weight: 700;
         }
     }

@@ -77,18 +77,18 @@ header{
     display: inline-block;
     background:$color-enlaces;
     margin:$medida-md $medida-ep;
+    
+    &:hover{
+        color:rgb(75, 75, 73);
+        font-weight:700;
+    }
+
     a{
         color:$color-terciario;
-        background:$color-enlaces;
         font-size:$font-size-sm;
         text-decoration: none;
-    
-        &:hover{
-            color:rgb(75, 75, 73);
-            font-weight:700;
-            background: none;
-        }
     }
+    
 }
 #footer{
     width:$max;
@@ -126,6 +126,7 @@ header{
     .footer__nav ul{
         display:grid;
         grid-template-columns: repeat(3,1fr);
+        padding-left:0;
     }
     p{
         font-size: .8rem;
