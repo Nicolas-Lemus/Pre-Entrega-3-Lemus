@@ -277,7 +277,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   -moz-background-clip: text;
 }
 
-.noticias h2 {
+.noticias h2, .lanzamientos h2 {
   padding: 5px;
   border-radius: 5px;
   color: rgb(247, 243, 6);
@@ -287,7 +287,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   font-size: 1rem;
 }
 @media (min-width: 992px) {
-  .noticias h2 {
+  .noticias h2, .lanzamientos h2 {
     font-size: 2rem;
   }
 }
@@ -336,21 +336,53 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 
-.card-group {
+.card-group, .lanzamientos .card-productos {
   padding: 10px;
 }
 @media (min-width: 576px) {
-  .card-group {
+  .card-group, .lanzamientos .card-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 @media (min-width: 992px) {
-  .card-group {
+  .card-group, .lanzamientos .card-productos {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 100px 50px 0 50px;
+  }
+}
+
+.lanzamientos {
+  padding-top: 120px;
+}
+@media (min-width: 576px) {
+  .lanzamientos h5 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  .lanzamientos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lanzamientos h5 {
+    font-size: 1.8rem;
+  }
+  .lanzamientos p {
+    font-size: 1rem;
+  }
+}
+.lanzamientos img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+@media (min-width: 1200px) {
+  .lanzamientos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lanzamientos h5 {
+    font-size: 1.8rem;
   }
 }
 

@@ -174,3 +174,38 @@
         padding:100px $medida-md $min $medida-md;
     }
 }
+
+.lanzamientos{
+    @extend .noticias;
+        padding-top: 120px;
+
+    .card-productos{
+        @extend .card-group;
+    }
+        @media (min-width:$tablet) {
+            h5{
+                font-size: 1.3rem;
+            }
+        }
+        @media (min-width:$desktop) {
+            grid-template-columns: repeat(2,1fr);
+            h5{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        img{
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        @media (min-width:$desktopXG) {
+            grid-template-columns: repeat(3,1fr);
+
+            h5{
+                font-size: 1.8rem;
+            }
+        }
+}
