@@ -317,7 +317,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 .card p {
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
-  background: none;
   font-family: "Courier New", Courier, monospace;
 }
 .card .card-body {
@@ -332,7 +331,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     width: 100%;
   }
   .card p, .card a {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 }
 
@@ -346,10 +345,10 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     gap: 1rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .card-group, .lanzamientos .card-productos {
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 2rem;
     padding: 100px 50px 0 50px;
   }
 }

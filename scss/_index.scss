@@ -124,7 +124,7 @@
     img{ 
         @include wid-hei($max ,300px);
         border-radius:$medida-ep;
-        object-fit: cover;
+        object-fit:cover;
     }
 
     h5{
@@ -136,7 +136,6 @@
     p{
         color:$color-terciario;
         font-size:$font-size-sm + .2rem;
-        background:none;
         font-family: 'Courier New', Courier, monospace;
     }
 
@@ -154,7 +153,7 @@
             width: $max;
         }
         p ,a{
-            font-size:$font-size-ep + $font-size-sm;
+            font-size:$medida-epl;
         }
     }
 }
@@ -168,9 +167,9 @@
             gap:$font-size-sm;
         }
 
-    @media (min-width:$desktop) {
+    @media (min-width:$desktopXG) {
         grid-template-columns:repeat(3,1fr);
-        gap:$medida-ep + $medida-sm;
+        gap: 2rem;
         padding:100px $medida-md $min $medida-md;
     }
 }
